@@ -4,10 +4,9 @@ body {
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
-
 
 .container {
     display: grid;
@@ -18,33 +17,189 @@ body {
 
 #side-panel {
     grid-area: 1 / 1 / 7 / 2;
-    background-color: #4B9CD3;
+    background-color: #3098de;
     color: white;
-    padding: 10px;
+    padding: 14px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #top-nav {
     grid-area: 1 / 2 / 2 / 7;
     background-color: white;
-    padding: 20px;
+    padding: 14px 24px 0px 24px;
+    box-shadow: 0px 2px 2px darkgray;
 }
 
 #dashboard {
     grid-area: 2 / 2 / 7 / 7;
     background-color: lightgrey;
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    gap: 12px;
-    padding: 20px;
+    grid-template: repeat(1, 1fr) / repeat(6, 1fr);
 }
 
-#content-side-1 {
-    grid-area: 1 / 3 / 3 / 4;
+#projects {
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+
+#projects-container {
+    height: 100%;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 24px 24px 24px;
+    height: calc(100% - 64px);
+}
+
+#card-contianer>div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects-header {
+    height: 20px;
+    padding: 10px 10px 10px 24px;
+}
+
+.projects-card {
+    box-shadow: 2px 2px 2px darkgray;
+    border-radius: 8px;
+    background-color: white;
+    width: calc(100% / 2 - 10px);
+    display: flex;
 }
 
 .card {
     box-shadow: 2px 2px 2px darkgray;
     border-radius: 8px;
     background-color: white;
-    padding: 8px
+    width: 100%;
+    display: flex;
+}
+
+#announcements-trending {
+    grid-area: 1 / 5 / 2 / 7;
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+}
+
+#announcements-container {
+    height: calc(100% / 2 - 12px);
+}
+
+#trending-container {
+    height: calc(100% / 2 + 12px);
+}
+
+.header {
+    padding: 10px 10px 10px 0px;
+    height: 20px;
+}
+
+#announcements-card {
+    height: calc(100% - 40px);
+}
+
+#trending-card {
+    height: calc(100% - 64px);
+}
+
+.card-side-colour {
+    width: 10px;
+    height: 100%;
+    background-color: gold;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#card-content {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    text-overflow: ellipsis;
+}
+
+#side-panel div>p {
+    font-size: 12px;
+}
+
+.side-icon {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    width: 30px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    width: 300px;
+    background-color: lightgray;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: darkgray;
+}
+
+.search-bar-content {
+    display: flex;
+}
+
+div>span {
+    padding-right: 8px;
+    top: 20px
+}
+
+#search-bar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search-bar-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #3098de;
+    border-radius: 24px;
+    color: white;
+    border: 0px;
+    padding: 4px 4px 4px 4px;
+    min-width: 100px;
+    min-height: 28px;
+}
+
+#button-container {
+    display: flex;
+    gap: 14px;
+}
+
+#name-tag {
+    padding-top: 3px;
 }

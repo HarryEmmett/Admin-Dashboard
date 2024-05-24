@@ -6,26 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-    <div class="container" >
+    <div class="container">
         <div id="side-panel">
-            <p>  side pane </p>
+            <div class="side-icon">
+                <span class="material-icons">album</span>
+                <h3 class="side-icon-text"> Dashboard </h3>
+            </div>
+
+            <div>
+                <div class="side-icon">
+                    <span class="material-icons">home</span>
+                    <p class="side-icon-text">Home</p>
+                </div>
+                <div class="side-icon">
+                    <span class="material-icons">face</span>
+                    <p class="side-icon-text">Profile</p>
+                </div>
+                <div class="side-icon">
+                    <span class="material-icons">message</span>
+                    <p class="side-icon-text">Messages</p>
+                </div>
+                <div class="side-icon">
+
+                    <span class="material-icons">history</span>
+                    <p class="side-icon-text">History</p>
+                </div>
+                <div class="side-icon">
+
+                    <span class="material-icons">tasks</span>
+                    <p class="side-icon-text">Tasks</p>
+                </div>
+                <div class="side-icon">
+
+                    <span class="material-icons">people</span>
+                    <p class="side-icon-text">Communities</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="side-icon">
+                    <span class="material-icons">support</span>
+                    <p class="side-icon-text">Support</p>
+                </div>
+                <div class="side-icon">
+                    <span class="material-icons">settings</span>
+                    <p class="side-icon-text">Settings</p>
+                </div>
+                <div class="side-icon">
+                    <span class="material-icons">key</span>
+                    <p class="side-icon-text">Privacy</p>
+                </div>
+            </div>
         </div>
         <div id="dashboard">
-            <div class="card"><p>asdasd</div>
-            <div class="card"></div>
-            <div class="card" id="content-side-1"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card" id="content-side-2"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+
+            <div id="projects">
+                <div id="projects-container">
+                    <div id="projects-header">
+                        <strong id="aaa">My Projects</strong>
+                    </div>
+                    <div id="card-container">
+                        <div class="projects-card">
+                            <div class="card-side-colour"> </div>
+                            <div class="card-content"> </div>
+                        </div>
+                        <div class="projects-card">
+                            <div class="card-side-colour"></div>
+                        </div>
+                        <div class="projects-card">
+                            <div class="card-side-colour"></div>
+                        </div>
+                        <div class="projects-card">
+                            <div class="card-side-colour"></div>
+                        </div>
+                        <div class="projects-card">
+                            <div class="card-side-colour"></div>
+                        </div>
+                        <div class="projects-card">
+                            <div class="card-side-colour"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="announcements-trending">
+                <div id="announcements-container">
+                    <div class="header">
+                        <strong>Announcements</strong>
+                    </div>
+                    <div class="card" id="announcements-card">
+                        <hr >
+                    </div>
+                </div>
+
+                <div id="trending-container">
+                    <div class="header">
+                        <strong class="header">Trending</strong>
+                    </div>
+                    <div class="card" id="trending-card">
+                        <hr >
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div id="top-nav">
-           <p>top nav</p>
+            <div class="search-bar">
+                <div id="search-bar-top">
+                    <div class="search-bar-content">
+                        <span class="material-icons">search</span>
+                        <input type="text" />
+                    </div>
+                    <div class="search-bar-content">
+                        <span class="material-icons">face</span>
+                        <strong id="name-tag">Harry Emmett</strong>
+                    </div>
+
+                </div>
+                <div id="search-bar-bottom">
+                    <div>
+                        <h3>Your Project Dashboard</h3>
+                    </div>
+                    <div id="button-container">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    </div>
     </div>
 
 </body>
